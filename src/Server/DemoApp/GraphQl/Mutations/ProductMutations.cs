@@ -14,6 +14,10 @@ namespace GraphQlProductsDemo.GraphQl.Mutations
             var product = new Product
             {
                 Name = input.Name,
+                Description = input.Description,
+                Price = input.Price,
+                IsAvailable = input.IsAvailable,
+                CategoryId = input.CategoryId
             };
 
             context.Products.Add(product);
